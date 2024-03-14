@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css2/style.css">
+    </head>
+    <body id="background">
+        <nav>
+            <a href="index.html">
+            <img src="img/Arrow 1.png" alt="arrow" width="70px" height="50px">
+            </a>
+        </nav>
+        <h1>Options</h1>
+        <div>
+            <h2>Brightness</h2>
+        </div>
+        <div>
+            <input type="range" id="opacity-slider" min=".1" max="1" step=".01" value="1">
+            </div>
+            <script>
+                document.getElementById('opacity-slider').addEventListener('input', function (e) {
+  document.body.style.opacity = this.value;
+});
+            </script>
+            <!--Brightness Slider(2023), jsfiddle, Version 1.0, http://jsfiddle.net/0bdwzej0/1/-->
+        <div>
+            <h2>
+            Video Quality
+            </h2>
+        </div>
+        <div class="medium">
+            <button onclick="myFunction()">low</button>
+            <button onclick="myFunction2()">medium</button>
+            <button onclick="myFunction3()">high</button>
+        </div>
+        <script>
+            function myFunction() {
+               document.getElementById("background").style.backgroundImage = "url(img/background_low.png)";
+            }
+            </script>
+            <script>
+                function myFunction2() {
+                   document.getElementById("background").style.backgroundImage = "url(img/background_medium.png)";
+                }
+                </script>
+                <script>
+                    function myFunction3() {
+                       document.getElementById("background").style.backgroundImage = "url(img/background.png)";
+                    }
+                    </script>
+                    <!--Background Button (2023), w3schools, Version 1.0, https://www.w3schools.com/cssref/tryit.php?filename=trycss_js_background-image-->
+        <div class="pack">
+            <a href="resource_pack.html">
+                <button class="resource">Resource Pack</button>
+            </a>
+        </div>
+    </body>
+</html>
